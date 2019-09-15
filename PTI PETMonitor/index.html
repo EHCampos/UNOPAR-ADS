@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>PetMonitor</title>
+<!-- if lt IE9 -->
+	<script type="text/javascript" src="js/html5shiv.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.min.js"></script>
+<!--[endif]-->
+<!-- Reset CSS -->
+	<link rel="stylesheet" href="css/reset.css">
+<!-- CSS personaizado -->
+	<link rel="stylesheet" href="css/style.css">
+<!-- JavaScript GPS -->
+	<script type="text/javascript" src="js/loc.js"></script>
+<!-- Googe API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS9B8e2bN1qDJkc0VKma-kUCWcBlqloA">
+    </script>
+</head>
+<body>
+<!-- Todas imagens desse tite foi retirada de um site de livre uso comercia: https://pixabay.com/pt/ -->
+<!-- Menu utilizando bootStrap -->
+	<!-- Cria contaner navegação -->
+	<nav class="navegacao" aria-haspopup="true">
+		<a class="logo" href="#">PETMonitor</a>
+		<a class="mobile" onclick="mobileMenu()"><span id="btMob">&equiv;</span></a>
+		<ul id="nav-link">
+			<li id="inicio"><a href="">Início</a></li>
+			<li id="empresa"><a href="">Empresa</a></li>
+			<li id="produtos"><a href="">Produtos</a></li>
+			<li id="contato" class="last"><a href="">Contato</a></li>
+		</ul>
+	</nav>
+	<main id="container">
+		<section>
+			<article class="home">
+				<header>
+					<h1>Seu amigo mais seguro</h1>
+				</header>
+				<p class="desk">
+					Ter um animal de estimação nos traz muita alegria e qualidade de vida, porem eles necessita de uma atenção especial.<br>
+					Nossos amiguinhos são muito curiosos e ativos, fazendo a gente levar alguns sustos e preocupações quando não estamos por perto.
+				</p>
+				<p>
+					Pensando na segurança de seu amigo, a <b>PETMonitor</b> desenvolveu um sistema de monitoramento em tempo real.<br> Com nosso sistema através de um computador ou celular você poderá saber aonde ele se encontra e ser avisado quando ele sair de uma área predeterminada.
+				</p>
+			</article>
+			<!-- Formuario para localização -->
+			<h2 align="center">Dados do Pet</h2>
+			<form class="locPet" method="POST">
+				<ul>
+					<li>
+						<input type="text" id="nomepet" maxlength="12" name="nomepet" placeholder="Nome do animal" autocomplete="off" maxlength="12" >
+					</li>
+					<li>
+						<input type="text" id="raca" maxlength="12" name="raca" placeholder="Raça:" autocomplete="off" maxlength="12" >
+					</li>
+					<li class="raca">
+						<!--Macho -->
+						<input id="raca-m" type="radio" name="raca" value="1" checked>
+						<label class="racem" for="raca-m"></label>
+						<!--Fêmea-->
+						<input id="raca-f" type="radio" name="raca" value="1">
+						<label class="racef" for="raca-f"></label>
+					</li>
+					<li>
+						<input type="submit" name="localiza" value="Localizar">
+					</li>
+				</ul>							
+			</form>
+		</section>
+		<footer id="footer">
+			<p align="center">
+				<b>Entre em contato conosco<br></b>
+				(11) 1234 5678<br>
+				contato@petmonitor.com.br<br>
+				Av. São Paulo 4 – Jardim Das Flores<br>
+				São Paulo/SP<br>
+			</p>
+		</footer>
+	</main>
+	<script type="text/javascript">
+	/* Botão mobile */
+	function mobileMenu(){
+		var x = document.getElementById('nav-link');
+		var y = document.getElementById('btMob');
+
+		if(x.className == ''){x.classList = 'show'; y.textContent = 'X';}else{x.classList = ''; y.innerHTML = '&equiv;';}
+	}
+	window.onresize = function(){
+		var x = document.getElementById('nav-link');
+		var y = document.getElementById('btMob');
+
+		x.classList = '';
+		y.innerHTML = '&equiv;';
+	}
+
+	/*Parar envio formulario */
+	var form = document.querySelector('form');
+    	form.addEventListener('submit', function(e){
+    		nomepet = document.getElementById('nomepet').value.toUpperCase();
+    		raca = document.getElementById("raca").value;
+
+    		e.preventDefault(); // <--- pára o envio do formulario
+    		givLoc();
+    		form.reset();
+    		e.prevent
+		});
+
+	window.onresize = redPag;
+</script>
+<!--Som alerta -->
+	<audio loop="loop">
+		<source src="audio/alerta.mp3" type="audio/mp3">
+		<source src="audio/alerta.oog" type="audio/oog">
+		<source src="audio/alerta.wmv" type="audio/wmv">
+	</audio>
+</body>
+</html>

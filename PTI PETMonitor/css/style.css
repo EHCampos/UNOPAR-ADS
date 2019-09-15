@@ -1,0 +1,232 @@
+/*
+Cor principal #FF7901
+Cor secundaria #FBB679
+
+Gradiente desse documento foi gerado em:
+Gradiente gerado: https://www.colorzilla.com/gradient-editor/
+Box Shadow gerado no site:
+https://www.cssmatic.com/box-shadow
+Gerador borda arredondada:
+https://www.cssmatic.com/border-radius;
+*/
+/*---------- Font externa ----------*/
+@font-face { font-family: OpenSans; src: url('OpenSans-Regular.ttf'); }
+
+html, body{ min-height: 100%; height: 100%; }
+body{ font-family: arial; overflow-x: hidden; }
+
+/*---------- Variaveis ----------*/
+:root { --navTop:3.8rem; }
+
+/*---------- Global ----------*/
+a, a:active{ text-decoration: none; }
+a:hover{ text-decoration: none; }
+h1, h2, h3{ color:#FF7901; }
+h1{ font-size: 1.5rem; }
+p{ line-height: 150%; }
+ul, li { padding: 0; margin:0; }
+.desk{visibility: hidden; position: absolute;}
+
+/*---------- Navegação Topo ----------*/
+nav.navegacao{ position: fixed; z-index: 888; top: 0; width: 100vw; min-width: 350px; overflow: hidden; line-height: 3.8rem; background-color:#FF7901; padding-top: 0.3rem;
+	-webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.75);
+}
+nav.navegacao a{ display: inline-block; color:#FFF; font-weight: bold; line-height: 3.8rem; }
+nav.navegacao a:hover{ color: #DD0000; }
+nav.navegacao a.logo{ display: inline; font-size: 2.5rem; padding-left: 1rem; font-weight: bolder; }
+nav.navegacao a.logo::after{ content: url('../img/logo.png'); }
+nav.navegacao a.logo:hover{ color: #FFFFFF; }
+nav.navegacao a.mobile{ float: right; font-size: 3.5rem; color:#FFF; padding-right: 1rem; cursor: pointer; font-weight: normal; }
+
+/*---------- Exibe menu Mobile ----------*/
+nav.navegacao ul.show{ display: block; height: calc(3.8rem * 2.6); }
+nav.show a.mobile{ font-size: 2.5rem; vertical-align: bottom; font-weight: 600;}
+
+/*---------- Menu DropDown ----------*/
+	nav.navegacao ul{ margin: 0; padding:0 1.5rem 0 1.5rem; list-style: none; line-height: normal; height: 0; transition: height 2s; -webkit-transition:2s; -moz-transition:2s; -o-transition: height 2s; ms-transition: height 2s;}
+		nav.navegacao ul li{ list-style: none; font-size: 120%; border-bottom: 1px solid #fff; }
+		nav.navegacao ul li.last{ border: none; }
+			nav.navegacao ul li a{ line-height: normal; padding: 0.5rem; }
+
+/*---------- Conteudo ----------*/
+main#container{ position: relative; padding-top: calc(3.8rem); min-height: calc(100% - (3.8rem + 2px)); }
+section{padding-bottom: 170px; }
+article.home{ padding: 1rem; 	font-family: OpenSans, sans-serif; }
+
+/*---------- Formulario LocPet ----------*/
+form.locPet{ text-align: center; width: 95vw; margin: 0 auto; }
+form.locPet ul{ list-style: none; }
+form.locPet ul li{ padding-bottom: 17px; }
+
+/*---------- Input ----------*/
+input{ -webkit-border-radius: 5vw; 	-moz-border-radius: 5vw; border-radius: 5vw; padding: 8px; padding-left: 16px; font-size: 1rem; width: 90vw; max-width:250px; outline: 0; max-height: 40px; box-sizing: border-box; text-align: center; }
+input[type="text"]{ border: 1px solid #FF7901; }
+input[type="text"]:hover, input[type="text"]:focus{ background-color: #fcf2e8; }
+
+/*---------- Check raça ----------*/
+form.locPet ul li.raca{	text-align: center;}
+form.locPet ul li.raca input[type=radio]{visibility: hidden; position: absolute; width: 1px; }
+form.locPet ul li.raca input[type=radio]:after{	content: ""; clear: both; }
+form.locPet ul li.raca input[type=radio]:checked + label{ opacity: 1; }
+form.locPet ul li.raca label.racem, form.locPet ul li.raca label.racef{	width: 32px; height: 32px; display: inline-block; margin: 0 10px; }
+form.locPet ul li.raca label{ background: url("../img/race.gif"); cursor: pointer; opacity: 0.2; }
+form.locPet ul li.raca label.racem{ background-position: top left; }
+form.locPet ul li.raca label.racef{	background-position: top right; }
+
+/*---------- Submit ----------*/
+input[type="submit"]{ border: none; outline: 0; font-size: 18px; font-weight: bold;	color: #FFF; cursor: pointer;
+	background: #ff7901; /* Navegadores antigos */
+	background: -moz-linear-gradient(top,  #ff7901 0%, #fbb679 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ff7901 0%,#fbb679 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ff7901 0%,#fbb679 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7901', endColorstr='#fbb679',GradientType=0 ); /* IE6-9 */
+}
+
+input[type="submit"]:hover{	cursor: pointer; color: #F00;
+	background: #fbb679; /* Navegadores antigos */
+	background: -moz-linear-gradient(top,  #fbb679 0%, #ff7901 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #fbb679 0%,#ff7901 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #fbb679 0%,#ff7901 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbb679', endColorstr='#ff7901',GradientType=0 ); /* IE6-9 */
+}
+
+/*---------- Rodapé ----------*/
+footer#footer{ position: absolute; bottom: 0; width: 100vw; border: none; border-top: 2px #FF7901 solid; background-color: #EBEBEB; }
+
+/*---------- Pop up ----------*/
+div#shadow-popup{
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+}
+
+div#shadow-popup main{
+	position: relative;
+	background-color: #FFF;
+	display: inline-block;
+	border: 4px #ff7901 solid;
+	width: 100%;
+	height:100%;
+	box-sizing: border-box;
+}
+
+div#shadow-popup .logo{
+	position: absolute;
+	top: 0;
+	padding: 5px;
+	width: 300px;
+	margin-left: -150px;
+	left: 50%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	background: #ff7901; /* Navegadores antigos */
+	background: -moz-linear-gradient(top,  #ff7901 0%, #fbb679 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ff7901 0%,#fbb679 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ff7901 0%,#fbb679 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7901', endColorstr='#fbb679',GradientType=0 ); /* IE6-9 */
+	border-radius: 0px 0px 30px 30px;
+	-moz-border-radius: 0px 0px 30px 30px;
+	-webkit-border-radius: 0px 0px 30px 30px;
+	border: none;
+}
+div#shadow-popup .logo::after{ content: url('../img/logo30.png'); }
+
+/*Informações do mapa*/
+div#shadow-popup main .boxInfo{
+	position: absolute;
+	bottom: 0;
+	background-color:#FFF;
+	width: 100%;
+}
+
+ul#ulInfo{
+	text-align: center;
+	border-top: 2px solid #FF7901;
+	list-style: none;
+}
+
+ul#ulInfo li{
+	padding: 0 5px
+}
+
+li#range, li#vrange{
+	display: inline-block;
+}
+
+li#range{
+	text-align: right;
+	vertical-align: middle;
+}
+
+li#att{
+	font-size: 0.7rem;
+	color:#666;
+}
+
+li#distPet{
+	font-size: 3rem;
+	font-weight: bold;
+}
+li#distPet span{
+	padding-left: 15px;
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+li#vrange{
+	text-align: left;
+	font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#map{
+	width: 100%;
+	height: 100%;
+}
+
+button#mute{
+	background-color: transparent;
+	border: none;
+	background-image: url(../img/muted.gif);
+	background-position: bottom;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+div#popup_close{
+	position: absolute;
+	top: -12px;
+	right: -12px;
+	background-image: url(../img/popup_close.gif);
+	background-size: contain;
+	width: 32px;
+	height: 32px;
+}
+/*---------- Responsivo ----------*/
+/* Large devices (900px and up) */
+@media (min-width: 800px) {
+	article.home{width: 80vw; margin: 0 auto; }
+	form.locPet{ width: 80vw; background-image: url(../img/bgk1.jpg), url(../img/bgk2.jpg); background-position: left bottom, right bottom; background-size: contain; background-repeat: no-repeat; }
+	ul#nav-link{ line-height: var( --navTop ); float: right; margin-right: 2vw; transition: height none; -webkit-transition:none; -moz-transition:none; -o-transition: height none; ms-transition: height none; }
+	ul#nav-link li{ display: inline-block; border: none; }
+	ul#nav-link li a{line-height: 3.5rem;}
+	nav.navegacao a.mobile{ display: none; }
+	div#shadow-popup main{width: 90%;height:90%; margin: 2% 5%;}
+	.desk{visibility: visible; position: relative;}
+}
+@media (min-width: 1200px) {
+	article.home{ width: 50vw; }
+	form.locPet{ width: 50vw; }
+}

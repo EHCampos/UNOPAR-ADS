@@ -1,0 +1,1063 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-left\tproperty"
+			],
+			[
+				"r",
+				"relative\tposition"
+			],
+			[
+				"h",
+				"hidden\tvisibility"
+			],
+			[
+				"close",
+				"closePopup"
+			],
+			[
+				"box",
+				"boxClose"
+			],
+			[
+				"bac",
+				"background-position\tproperty"
+			],
+			[
+				"ba",
+				"background-position\tproperty"
+			],
+			[
+				"getel",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"aert",
+				"alertasound"
+			],
+			[
+				"backgrou",
+				"background-size\tproperty"
+			],
+			[
+				"backgroun",
+				"background-image\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"onr",
+				"onresize\t: EventHandler Window"
+			],
+			[
+				"gete",
+				"getElementById"
+			],
+			[
+				"over",
+				"overflowY\t = 'visible' Style CSS"
+			],
+			[
+				"v",
+				"visible\toverflow-y"
+			],
+			[
+				"getele",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Document"
+			],
+			[
+				"c",
+				"contain\tbackground-size"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"po",
+				"position\t = 'absolute' Style CSS"
+			],
+			[
+				"margint",
+				"marginLeft\t = 'initial' Style CSS"
+			],
+			[
+				"sty",
+				"style\t Style CSS"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"marg",
+				"margin\tproperty"
+			],
+			[
+				"childe",
+				"children\t: HTMLCollection Element"
+			],
+			[
+				"clas",
+				"className\t: DOMString Element"
+			],
+			[
+				"main",
+				"mainPopup"
+			],
+			[
+				"docume",
+				"document"
+			],
+			[
+				"to",
+				"top\tproperty"
+			],
+			[
+				"app",
+				"appendChild\t( node: Node ): Node Node"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"onloa",
+				"onload\t: EventHandler Document"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"cot",
+				"contain\tbackground-size"
+			],
+			[
+				"backgrund-i",
+				"background-image\tproperty"
+			],
+			[
+				"bor",
+				"border\tproperty"
+			],
+			[
+				"POS",
+				"position\tproperty"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"cur",
+				"cursor\tproperty"
+			],
+			[
+				"fonte",
+				"font-weight\tproperty"
+			],
+			[
+				"b",
+				"bottom\tvertical-align"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"paddin",
+				"padding\tproperty"
+			],
+			[
+				"class",
+				"classList\t: DOMTokenList Element"
+			],
+			[
+				"paddi",
+				"padding-left\tproperty"
+			],
+			[
+				"i",
+				"inline\tdisplay"
+			],
+			[
+				"tran",
+				"transition\tproperty"
+			],
+			[
+				"overflw",
+				"overflow\tproperty"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"f",
+				"fixed\tposition"
+			],
+			[
+				"mi",
+				"min-height\tproperty"
+			],
+			[
+				"pdd",
+				"paddingBottom\t = 'initial' Style CSS"
+			],
+			[
+				"docu",
+				"document"
+			],
+			[
+				"a",
+				"auto\twidth"
+			],
+			[
+				"bo",
+				"bottom\tproperty"
+			],
+			[
+				"in",
+				"inline-block\tdisplay"
+			],
+			[
+				"sele",
+				"querySelector\t( selectors: DOMString ): Element (Selectors) Element"
+			],
+			[
+				"re",
+				"resize\t = 'horizontal' Style CSS"
+			],
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"bl",
+				"block\tdisplay"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"cla",
+				"className\t: DOMString Element"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"co",
+				"cover\tbackground-size"
+			],
+			[
+				"bot",
+				"button\tTag"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"cl",
+				"clear\tproperty"
+			],
+			[
+				"margi",
+				"margin\tproperty"
+			],
+			[
+				"o",
+				"outline\tproperty"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"txt",
+				"text-align\tproperty"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"prom",
+				"promise"
+			],
+			[
+				"segur",
+				"seguro"
+			],
+			[
+				"inpu",
+				"inputRange"
+			],
+			[
+				"boxM",
+				"boxMain"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"inp",
+				"input"
+			],
+			[
+				"que",
+				"querySelector\t( selectors: DOMString ): Element Element"
+			],
+			[
+				"quey",
+				"querySelector\t( selectors: DOMString ): Element (Selectors) Element"
+			],
+			[
+				"typ",
+				"type\t: DOMString Event"
+			],
+			[
+				"pL",
+				"pLng"
+			],
+			[
+				"tL",
+				"tLng"
+			],
+			[
+				"boxinfo",
+				"boxInfo1"
+			],
+			[
+				"console",
+				"console\tconsole.error()"
+			],
+			[
+				"pl",
+				"pLng"
+			],
+			[
+				"tl",
+				"tLng"
+			],
+			[
+				"texta",
+				"text-align\tproperty"
+			],
+			[
+				"nod",
+				"nodeName\t: DOMString Node"
+			],
+			[
+				"ul",
+				"ulInfo"
+			],
+			[
+				"boxShad",
+				"boxShadow"
+			],
+			[
+				"crea",
+				"createElement\t( localName: DOMString ): Element Document"
+			],
+			[
+				"tyr",
+				"try_catch"
+			],
+			[
+				"fir",
+				"firstAccees"
+			],
+			[
+				"rb",
+				"rgba()\tbackground-color"
+			],
+			[
+				"docum",
+				"document\t: Document Window"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"clea",
+				"clear\t(): void Storage"
+			],
+			[
+				"alerta",
+				"alertasound"
+			],
+			[
+				"un",
+				"undefined\t: object Global"
+			],
+			[
+				"bu",
+				"button"
+			],
+			[
+				"n",
+				"no"
+			],
+			[
+				"em",
+				"embed\tTag"
+			],
+			[
+				"l",
+				"loop"
+			],
+			[
+				"lo",
+				"loop\tAttr"
+			],
+			[
+				"pet",
+				"Pet"
+			],
+			[
+				"else",
+				"else_if"
+			],
+			[
+				"child",
+				"lastChild\t: Node Node"
+			],
+			[
+				"wi",
+				"window\t: WindowProxy Window"
+			],
+			[
+				"sc",
+				"screenHeight"
+			],
+			[
+				"scr",
+				"screenWidth"
+			],
+			[
+				"wind",
+				"windowHeight"
+			],
+			[
+				"win",
+				"windowWidth"
+			],
+			[
+				"mar",
+				"margin-bottom\tproperty"
+			],
+			[
+				"list",
+				"list-style\tproperty"
+			],
+			[
+				"text-de",
+				"text-decoration\tproperty"
+			],
+			[
+				"padding",
+				"padding\tproperty"
+			],
+			[
+				"info",
+				"infoPet"
+			],
+			[
+				"pare",
+				"parentNode\t: Node Node"
+			],
+			[
+				"map",
+				"mapashadow"
+			],
+			[
+				"getEle",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Document"
+			],
+			[
+				"text",
+				"textContent\t: DOMString Node"
+			],
+			[
+				"pos",
+				"position\tproperty"
+			],
+			[
+				"cont",
+				"contmapa"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/index.html",
+			"settings":
+			{
+				"buffer_size": 4243,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/css/style.css",
+			"settings":
+			{
+				"buffer_size": 8379,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "function popup(x){\n//Verifica se tem algum popup aberto*/\n\tif(document.getElementById('shadow-popup') == null){\n\n\t\tvar sPopup = document.createElement('div');//Cria elemento Div\n\t\tsPopup.id = 'shadow-popup';// Atribui Id para DIv criada\n\t\tsPopup.className = x;\n\t\tdocument.body.appendChild(sPopup);//Adiciona Div ao Body\n\n\t\twindow.scrollTo(0, 0);//Posiciona navegador no topo da pagina;\n\t\tdocument.body.style.overflow = 'hidden';// Ocuta barra de rolagem\n\t\t\n\t\tvar mainPopup = document.createElement('main');//Cria elemento main\n\t\tmainPopup.className = x+'-main';// Atribui id ao elemento criado\n\t\tsPopup.appendChild(mainPopup);//Adiciona main dentro da div shadow\n\n\t\tvar msg =  x.split('_');// Separa string\n\t\tif(msg[0] == 'msg'){ // Se string[0] for igual a msg chama função passando parametro para retorno da msg\n\t\t\tmainPopup.innerHTML = info(msg[1]);\n\t\t}\n\n\t\t/*Cria botão fechar*/\n\t\tvar closePopup = document.createElement('div');//Cria elemento Div\n\t\tclosePopup.id = 'popup_close';// Atribui Id para DIv criada\n\t\tclosePopup.setAttribute('onclick', 'closePopup(\"'+x+'\")')\n\t\tmainPopup.appendChild(closePopup);//Adiciona Div ao Body\n\n\t}else{\n\t\tvar sPopup = document.getElementById('shadow-popup');\n\n\t\tif(sPopup.getElementsByClassName(x+'-main').length == 0){\n\t\t\tvar mainPopup = document.createElement('main');//Cria elemento main\n\t\t\tmainPopup.style.id = 'main-popup';\n\t\t\tmainPopup.className = x+'-main';// Atribui id ao elemento criado\n\t\t\tsPopup.appendChild(mainPopup);//Adiciona main dentro da div shadow\n\t\t\t\n\t\t}else{\n\t\t\tvar mPopup = sPopup.getElementsByClassName(x+'-main');\n\t\t\tfor (i = 0; i < mPopup.length; i++) {\n\t\t\t\tsPopup.children[i].remove();\n\t\t\t} \n\t\t}\n\t\t\n\t}\n\n\t/*Centraliza Popup na tela*/\n\t\tmainPopup.style.marginLeft = ((mainPopup.offsetWidth)/2)*-1+'px';\n\t\tmainPopup.style.left = '50%';\n\t\tmainPopup.style.marginTop = ((mainPopup.offsetHeight)/2)*-1+'px';\n\t\tmainPopup.style.top = '50%';\n}\n\n/*--------- Menssagens ---------*/\nfunction info(msg){\n\tvar desk = 'Para obter uma localização mais precisa, acesse a pagina de um dispositivo móvel';\n\n\treturn desk;\n}\n/*--------- Fechar Popup ---------*/\nfunction closePopup(x){\n\tvar sShadow = document.getElementsByClassName(x);\n\tdocument.body.style.overflowY = 'visible';\n\tsShadow[0].remove();\n}",
+			"file": "popup.js",
+			"file_size": 2315,
+			"file_write_time": 132129564823728532,
+			"settings":
+			{
+				"buffer_size": 2246,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "loc.js",
+			"settings":
+			{
+				"buffer_size": 12572,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "var nomepet = 'Mell';\nvar raca = 'Vira Lapa'\nvar sexo = 'f';\n//Variaveis global\nvar alertasound = true //controle do alerta true = ativa\nvar pLat = 0; //Variavel Latitude pet\nvar pLng = 0; //Variavel Longitude pet\nvar mapZoom = 18; //Zoom aplicado no mapa\nvar markersArray =[];//Variavel documentação https://developers.google.com/maps/documentation/javascript/markers\n\n//Inicializa API geoLocalization do google\n//documentação API https://developers.google.com/maps/documentation/javascript/geolocation\nfunction givLoc(x) {\n    try{\n//Utilizado para capturar a posição atual do dispositivo.\n//Será chamada automáticamente  cada vez que a posição no dispositivo mudar.\n//Caso navegador não suporte sera chamada função de error \"errorCallback\".\n\t\toptions = {\n\t\t  enableHighAccuracy: false,//habilitar alta precisão\n\t\t  timeout: 5000,//Tempo maximo em milesegundo para obter localização\n\t\t  maximumAge: 0// tempo maximo que disposivo ira amarzezar posição em cache\n\t\t};\n        id = navigator.geolocation.watchPosition(getPos,errorCallback,options);\n    }catch(e){\n        console.error(\"Não foi possivel inicializar a geolocalização\"+e);\n    }\n}\n\nfunction getPos(pos){\n//try {\n\t\tconsole.clear();//Limpa console\n\n//Pega loclização do tutor\t\n\t\tvar tLat = pos.coords.latitude;\n\t\tvar tLng = pos.coords.longitude;\n\n\t\tconsole.error(tLat+'//'+tLng);\n\n//Gera loalização fictia do pet\n//Verifica se ja foi gerada uma localização para o pet\n\t    if(pLat == 0 || pLng == 0){\n\n//Se não Gera uma cordenada ficticia utilizando as cordenadas o tutor para calcular,        \n\t\t\tpLat = parseFloat((tLat +Math.floor(Math.random()* 9999) *0.00000003).toFixed(7));\n\t\t\tpLng = parseFloat((tLng +Math.floor(Math.random()* 9999) *0.00000003).toFixed(7));\n\t\t}else{\n//Se a cordenada estiver gerada, gera nova cordenada com base na antiga\n//Gera valor negatico ou positivo\n\t\t\tif((Math.floor(Math.random()* 2) *1) == 1){var m = '1';}else{var m ='-1';}\n\n\t\t\tpLat = parseFloat((pLat +(Math.floor(Math.random()* 999) *0.00000006)*m).toFixed(7));\n\t\t\tpLng = parseFloat((pLng +(Math.floor(Math.random()* 999) *0.00000006)*m).toFixed(7));\n\t    }\n\t   \tconsole.log('Tutor e Pet Localizado');\n\n//Calcula distancia entre Tutor e Pet\n\t\tcDist = calcDist(tLat,tLng,pLat,pLng);\n\t\tconsole.log('Distancia Calculada');\n\n//Verifica se o boxShadow e mapa foi carregado\n\tif(document.getElementsByClassName('map').length == 0){\n\n//Se não foi é criado\n\t\tif(createBox() == true){\n\t\t\tconsole.log('Box mapa criado');\n//Apos criar insere informações\n\t\t\tinsertInfo(tLat,tLng,pLat,pLng,cDist);\n\t\t\tcreatMark(tLat,tLng,pLat,pLng,map);\n\t\t\tif(insertInfo){\n \t\t\t\tranger();\n \t\t\t}\t\n\t\t}\n\t}else{\n//Se boxShadow e mapa já foi criado atualiza informações\n\t\tvar itInfo = insertInfo(tLat,tLng,pLat,pLng,cDist);\n \t\tcreatMark(tLat,tLng,pLat,pLng,map);\n \t\tif(insertInfo){\n \t\t\tranger();\n \t\t}\n\n\t}\n\t/*} catch(e) {\n\t\tconsole.log('Falha ao gerar localização'+e);\n\t}*/\n}\n\nfunction calcDist(tLat,tLng,pLat,pLng){\n//calcula distancia entre pet e tutor\n//codigo do calculo retirado:\n//http://carlosdelfino.eti.br/cursoarduino/geoprocessamento/calculando-distancias-com-base-em-coordenadas-de-gps/\n    try{\n        d2r = 0.017453292519943295769236;\n\n        dlong = (pLng - tLng) * d2r;\n        dlat = (pLat - tLat) * d2r;\n\n        temp_sin = Math.sin(dlat/2.0);\n        temp_cos = Math.cos(tLat * d2r);\n        temp_sin2 = Math.sin(dlong/2.0);\n\n        a = (temp_sin * temp_sin) + (temp_cos * temp_cos) * (temp_sin2 * temp_sin2);\n        c = 2.0 * Math.atan2(Math.sqrt(a), Math.sqrt(1.0 - a));\n\n    //Resultado da distancia\n        return parseInt((6368.1 * c)*1000);\n    }catch(e){\n        console.error('Falha ao calcular a distancia'+e);\n    }\n}\n\nfunction convertData(data){\n    var dia     = '00'+data.getDate();           // 1-31\n    var mes     = data.getMonth();          // 0-11 (zero=janeiro)\n    var ano4    = data.getFullYear();       // 4 dígitos\n    var hora    = '00'+data.getHours();          // 0-23\n    var min     = '00'+data.getMinutes();        // 0-59\n    var str_data = dia.slice(-2)+'/'+('00'+(mes+1)).slice(-2)+'/'+ano4+' - '+hora.slice(-2)+':'+ min.slice(-2);\n\n    return str_data;\n}\n\nfunction createBox(){\n\tvar boxMain = document.getElementById('shadow-popup').getElementsByClassName('Loc-main')[0];\n\n\t//Criando cantainer do mapa\n\tvar boxMap = document.createElement('article');//cria elemento article\n\tboxMap.id = 'map';//Atribui ao elemento article id 'map'\n\tboxMain.appendChild(boxMap);//imprime article dentro da section boxMain\n\tvar boxMap = document.getElementById('map');\n\n\t//Criando cantainer da logo\n\tvar boxLogo = document.createElement('span');//cria elemento span\n\tboxLogo.classList = 'logo';//Atribui ao elemento article id 'map'\n\tboxLogo.textContent = 'PETMonitor';\n\tboxMain.appendChild(boxLogo);//imprime article dentro da section boxMain\n\n\t//Criando cantainer das cordenadas\n\tvar boxInfo = document.createElement('aside');//cria elemento aside\n\tboxInfo.classList = 'boxInfo';//Atribui ao elemento aside id 'cord'\n\tboxMain.appendChild(boxInfo);//imprime aside dentro da article boxMain\n\tvar boxInfo = boxMain.getElementsByClassName('boxInfo');\n\n\t//Adiciona altura para contaner mada altura do boxMain - altura da BoxInfo\n\tboxMap.style.height = boxMap.offsetHeight - boxInfo[0].offsetHeight+'px';\n\n\tif(boxInfo.length != 0){\n\t//Insere mapa apos carregar o elemento boxInfo\t\t\n\t\tinsertMap(pLat,pLng);\n\t}\n\n\t//cria lista com as informações\n\tvar ulInfo = document.createElement('ul');//cria elemento ul\n\tulInfo.id = 'ulInfo';\n\n\tboxInfo[0].appendChild(ulInfo);//imprime ul dentro da aside boxInfo\n\tvar ulInfo = document.getElementById('ulInfo');\n\n\t//cria 5 linhas (LI) dentro da ul\n\tfor (var i = 0; i <= 3; i++) {\n\t\tvar liInfo =document.createElement('li');//cria elemento li\n\t\tulInfo.appendChild(liInfo)[i];\n\t}\n\n\t//identificando as linhas\n\tvar liInfo = ulInfo.children;\n\n\tvar inputRange = liInfo[0].id = 'range';\n\tvar valueRange = liInfo[1].id = 'vrange';\n\tvar valueAtt = liInfo[2].id = 'att';\n\tvar valueDist = liInfo[3].id = 'distPet';\n\n\t//cria botão fechar\n\tvar boxClose = document.createElement('span');//cria elemento aside\n\tboxClose.classList = 'close';//Atribui ao elemento aside id 'cord'\n\tboxClose.innerHTML = 'x'\n\tboxMain.appendChild(boxClose);//imprime aside dentro da article boxMain\n\tvar boxClose = boxMain.getElementsByClassName('boxClose');\n\n\n\treturn true;\n}\n\nfunction insertMap(pLat,pLng){\n\tvar pCord = {lat: pLat,lng: pLng};\n\t//cria cria mapa centralizado nas cordenadas do Pet\n    map = new google.maps.Map(document.getElementById('map'), {\n    \tzoom: mapZoom,//Zoom do mapa\n        center: pCord,//Cordenadas para centralização do mapa\n        mapTypeId: 'roadmap',//mapa padrão da google\n        mapTypeControl: false,//Desabilita contrle de tipo de mapas\n        fullscreenControl: false// Desabilita botão de fullScreen\n    });\n}\n\nfunction creatMark(tLat,tLng,pLat,pLng,map){\n//Documentação referente aos marcadores\n//https://developers.google.com/maps/documentation/javascript/markers\n    try {\n//Limpa todos marcadores    \n\t\tclearMark();//Limpa marcaores\n//Prepara variavel com as coordenadas do tutor\n\t\tvar tCord = {lat: tLat, lng: tLng};\n// prepara vaiavel com as coordenadas do pet\n        var pCord = {lat: pLat,lng: pLng};\n// prepara informações para exibir no mapa\n    var iTutor  = \"Você \\n Lat: \"+ tLat + \"\\n Long: \"+ tLng;\n    var iPet = nomepet+\" (\"+raca+\")\\n Lat: \"+ pLat + \"\\n Long: \"+ pLng;\n//cria marcador do tutor    \n        var marker = new google.maps.Marker({\n            position: tCord,//cordenadas do Tutor \n            map: map,// Mapa aonde sera inserido\n            label: 'T',//indentificação\n            title: iTutor,//Informações \n        });\n        markersArray.push(marker);\n//cria marcador do Pet\n        var marker = new google.maps.Marker({\n            position: pCord,//cordenadas do Pet \n            map: map,// Mapa aonde sera inserido\n            label: 'P',//indentificação\n            title: iPet,//Informações \n        });\n       markersArray.push(marker);\n       google.maps.event.addListener(marker,\"click\",function(){});\n\n       console.log('Marcadores gerado com sucesso');\n    } catch(e) {\n        console.error('Falha ao gerar marcadores: '+e);\n    }     \n}\n\nfunction clearMark() {\n    try {\n    \t//conta quantos marcadores tem no mapa\n        for (var i = 0; i < markersArray.length; i++ ) {\n        \t//remove os marcadores\n            markersArray[i].setMap(null);\n        }\n        markersArray.length = 0;\n    } catch(e) {\n        console.error('Falha ao limpar marcadore: '+e);\n    }\n}\n\nfunction insertInfo(tLat,tLng,pLat,pLng,cDist){\n\tvar Range = document.getElementById('range');\n\tvar vRange = document.getElementById('vrange');\n\tvar Att = document.getElementById('att');\n\tvar Dist = document.getElementById('distPet');\n\n\tif(range.querySelector('input') == null){\n\t\tvar inputRange = document.createElement('input')//cria input\n\t\t//Insere atributos no input\n\t\tinputRange.id = 'iRange';\n\t\tinputRange.setAttribute('type', 'range');\n\t\tinputRange.setAttribute('value', '20');\n\t\tinputRange.setAttribute('min', '0');\n\t\tinputRange.setAttribute('max', '100');\n\t\tinputRange.setAttribute('step', '10');\n\t\tinputRange.setAttribute('onchange','ranger()');\n\t\trange.appendChild(inputRange);//Adiciona input dentro do elemento li#range\n\t}\n\tvar iRange = document.getElementById('iRange').value;\n\tvar ulInfo = document.getElementById('ulInfo');\n\n\t//limpa as linhas dentro la lista ulInfo e insere novos valores\n\tfor (var i = 1; i <= 3; i++) {\n\t\tif(i == 1){var text = iRange+' mt';}//Mostra valor do input range na tela\n\t\tif(i == 2){var text = convertData(new Date());}//MOstra data da atualização das cordenadas\n\t\tif(i == 3){var text = cDist+' mt';}//Mostra distancia entre pet e tutor\n\t\tulInfo.children[i].textContent = text;\t\t\n\t}\n}\n\n//Menssagem de erro caso navegador não suporte geolocalização\nfunction errorCallback(error) {\n    console.error('Error ao carregar geolocalização');\n}\n\nfunction ranger(){\n    try {\n//Pega valor de segurança do input range        \n        vrange = document.getElementById('iRange').value;//pega valor do input range\n//Se valor igual \"0\" range fica off\n        if(vrange == 0){var segrang = 'Off';}else{var segrang = vrange+' mt';}\n        document.getElementById('vrange').innerHTML = segrang;//Imprime valor\n        seguro();\n    } catch(e) {\n        // statements\n        console.error('Range: '+ e);\n    }\n}\n\nfunction seguro(){\n\tvar Dist = document.getElementById('distPet');\n//Compara distancia do pet com distancia segura\n//Se pet estiver fora muda cor do texto e emite um alerta\n\tif((cDist > vrange)&&(vrange !=0)){\n\t\tDist.style.color = '#F00';\n\t\tDist.innerHTML = \"<img src='alerta.gif' height='35px'> \"+ vrange+\" mt <button id='mute' onclick='alerta()'></button>\";\n\n\t\t//Verifica se sinal de alerta foi pausado\n        if(alertasound == true){\n        \talerta('play');//Se não emite sinal de alerta\n        }\t\t\n\t}\n}\n\nfunction alerta(x){\n    try {\n//Pausa o som de alerta        \n        if((x == undefined)||(x == 'mute') && (alertasound == true)){\n            const audio = document.querySelector('audio');\n            audio.pause();\n            alertasound = false;\n        }\n//Emite som de alerta        \n        if (x == 'play') {\n            const audio = document.querySelector('audio');\n            audio.play();\n        }\n    } catch(e) {\n        console.log(e);\n    }\n\n}\n\n\nfunction btClose(){\n\n}",
+			"file": "loc - Copia.js",
+			"file_size": 11749,
+			"file_write_time": 132128954536647797,
+			"settings":
+			{
+				"buffer_size": 11351,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bck/style.css",
+			"settings":
+			{
+				"buffer_size": 5042,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 64.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bck/index.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/js/loc - Copia.js",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/teste.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bck/locpet.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bck/style.css",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/css/style.css",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/loc",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/css/css3-mediaqueries.min.js",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/js/html5shiv.js",
+		"/E/l2/index.html",
+		"/E/l2/css/style.css",
+		"/E/CondSeg/index.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/index.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/style.css",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/loc.js",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bck/loc.js",
+		"/C/Users/Ton/Downloads/bootstrap-4.1.3/bootstrap-4.1.3/site/index.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bckstyle.css",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/locpet.html",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bckloc.js",
+		"/C/Users/Ton/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
+		"/C/Users/Ton/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/JavaScript-Completions.sublime-settings",
+		"/C/Users/Ton/AppData/Roaming/Sublime Text 3/Packages/JavaScript Completions/Default (Windows).sublime-keymap",
+		"/C/Users/Ton/AppData/Roaming/Sublime Text 3/Packages/User/JavaScript-Completions.sublime-settings",
+		"/E/l2gk/website/GranKain/index.php",
+		"/E/l2gk/website/GranKain/css/style.css",
+		"/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/intex.html",
+		"/E/l2gk/website/GranKain/js/language.js",
+		"/E/l2gk/website/GranKain/js/template.js"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"remo",
+			"logo",
+			"alertasound",
+			"mute",
+			"boxMap",
+			"shadow",
+			"boxShadow",
+			"article#map",
+			"map",
+			"overflow",
+			"article#map",
+			"article#mapa",
+			"shadow-popup",
+			"createb",
+			"createBox",
+			"loc",
+			"map",
+			"150",
+			"map",
+			"createBox",
+			"insertm",
+			"createBox()",
+			"id=\"home\"",
+			"main",
+			"errorCallback",
+			"boxShadow",
+			"shadow",
+			"top",
+			">\n",
+			"--->",
+			"<!---",
+			"-->",
+			"var(--navTop)",
+			"--navTop",
+			"navTop",
+			"2s",
+			",  ",
+			",",
+			"  }",
+			"}",
+			"{  ",
+			"{",
+			";  ",
+			";",
+			"input[type=\"t",
+			"PETMonitor",
+			"nav-mob",
+			"after",
+			"section",
+			"input",
+			"inpu",
+			">",
+			"<",
+			"ranger",
+			"seguro",
+			"ranger",
+			"insertInfo",
+			"cDist",
+			"10px",
+			"map",
+			"boxMain",
+			"shadow",
+			"close",
+			"height",
+			"convertData",
+			"data",
+			"convertData",
+			"console",
+			"ulInfo",
+			"boxInfo",
+			"range",
+			"creatMark",
+			"limpamark",
+			"if(",
+			"boxCord",
+			");\n",
+			"');\n",
+			"segrang",
+			"mapashadow",
+			"petdist",
+			"mapashadow",
+			"sulc",
+			"box",
+			"petdist",
+			"if(",
+			"logo.gi",
+			".png",
+			";\n",
+			"ffaf4b",
+			"geramapa",
+			"inforcord",
+			"#vrange",
+			"cord",
+			"sha",
+			"if(",
+			"defaultView",
+			"button",
+			"after",
+			"padding-bottom",
+			"infoWindow",
+			"inicializar",
+			"$",
+			"00005"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"article#map",
+			"shadow-popup",
+			"-->",
+			"<!--",
+			"3.8rem",
+			"none",
+			"0",
+			", ",
+			" }",
+			"{ ",
+			"; ",
+			"%3E",
+			"%3c",
+			"boxInfo",
+			"mapa-shadow",
+			"rDist",
+			"mapa-shadow",
+			"ff7901",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2737,
+								2737
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1680.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6962,
+								6962
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3110.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "popup.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2246,
+								2104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "loc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12572,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								12572
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "loc - Copia.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5101,
+								5250
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2340.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/UNOPAR/Produção Textual Interdisciplinar Individual/html/bck/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5042,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3891,
+								3344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Node.sublime-build",
+	"project": "primeiro semestre pti.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
