@@ -5,8 +5,8 @@ var pLng = 0; //Variavel Longitude pet
 var mapZoom = 18; //Zoom aplicado no mapa
 var markersArray =[];//Variavel documentação https://developers.google.com/maps/documentation/javascript/markers
 
-//Inicializa API geoLocalization do google
-//documentação API https://developers.google.com/maps/documentation/javascript/geolocation
+//Inicializa API geoLocalization da World Wide Web Consortium (W3C)
+//documentação API https://www.w3schools.com/html/html5_geolocation.asp
 function givLoc(x) {
     try{
 //Utilizado para capturar a posição atual do dispositivo.
@@ -164,7 +164,7 @@ function createBox(){
 		var ulInfo = document.getElementById('ulInfo');
 
 		//cria 5 linhas (LI) dentro da ul
-		for (var i = 0; i <= 3; i++) {
+		for (var i = 0; i <= 4; i++) {
 			var liInfo =document.createElement('li');//cria elemento li
 			ulInfo.appendChild(liInfo)[i];
 		}
@@ -172,10 +172,11 @@ function createBox(){
 		//identificando as linhas
 		var liInfo = ulInfo.children;
 
-		var inputRange = liInfo[0].id = 'range';
-		var valueRange = liInfo[1].id = 'vrange';
-		var valueAtt = liInfo[2].id = 'att';
-		var valueDist = liInfo[3].id = 'distPet';
+		var txtSeguro = liInfo[0].textContent = 'Perímetro Seguro:';
+		var inputRange = liInfo[1].id = 'range';
+		var valueRange = liInfo[2].id = 'vrange';
+		var valueAtt = liInfo[3].id = 'att';
+		var valueDist = liInfo[4].id = 'distPet';
 
 		//cria botão fechar
 		var boxClose = document.createElement('div');//cria elemento aside
@@ -190,7 +191,8 @@ function createBox(){
 		console.log('Falha ao criar Box: '+e);
 	}
 }
-
+//Com a API de mapa da google geramos um mapa
+//Documentação https://developers.google.com/maps/documentation/javascript/geolocation
 function insertMap(pLat,pLng){
 	try {
 			var pCord = {lat: pLat,lng: pLng};
@@ -280,10 +282,10 @@ function insertInfo(tLat,tLng,pLat,pLng,cDist){
 		var ulInfo = document.getElementById('ulInfo');
 
 		//limpa as linhas dentro la lista ulInfo e insere novos valores
-		for (var i = 1; i <= 3; i++) {
-			if(i == 1){var text = iRange+' mt';}//Mostra valor do input range na tela
-			if(i == 2){var text = convertData(new Date());}//MOstra data da atualização das cordenadas
-			if(i == 3){var text = cDist+' mt';}//Mostra distancia entre pet e tutor
+		for (var i = 2; i <= 4; i++) {
+			if(i == 2){var text = iRange+' mt';}//Mostra valor do input range na tela
+			if(i == 3){var text = convertData(new Date());}//MOstra data da atualização das cordenadas
+			if(i == 4){var text = cDist+' mt';}//Mostra distancia entre pet e tutor
 			ulInfo.children[i].textContent = text;		
 		}
 		redPag();
