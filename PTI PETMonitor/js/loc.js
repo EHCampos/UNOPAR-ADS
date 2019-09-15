@@ -19,19 +19,17 @@ function givLoc(x) {
 		};
         getId = navigator.geolocation.watchPosition(getPos,errorCallback,options);
     }catch(e){
-        console.error("Não foi possivel inicializar a geolocalização"+e);
+        console.error("Não foi possivel inicializar a geolocalização: "+e);
     }
 }
 
 function getPos(pos){
-//try {
+	try {
 		console.clear();//Limpa console
 
 //Pega loclização do tutor	
 		var tLat = pos.coords.latitude;
 		var tLng = pos.coords.longitude;
-
-		console.error(tLat+'//'+tLng);
 
 //Gera loalização fictia do pet
 //Verifica se ja foi gerada uma localização para o pet
@@ -55,30 +53,30 @@ function getPos(pos){
 		console.log('Distancia Calculada');
 
 //Verifica se o boxShadow e mapa foi carregado
-	if(document.getElementById('shadow-popup') == null){
+		if(document.getElementById('shadow-popup') == null){
 
 //Se não foi é criado
-		if(createBox() == true){
-			console.log('Box mapa criado');
+			if(createBox() == true){
+				console.log('Box mapa criado');
 //Apos criar insere informações
-			insertInfo(tLat,tLng,pLat,pLng,cDist);
-			creatMark(tLat,tLng,pLat,pLng,map);
-			if(insertInfo){
- 				ranger();
- 			}	
-		}
-	}else{
+				insertInfo(tLat,tLng,pLat,pLng,cDist);
+				creatMark(tLat,tLng,pLat,pLng,map);
+				if(insertInfo){
+ 					ranger();
+ 				}	
+			}
+		}else{
 //Se boxShadow e mapa já foi criado atualiza informações
-		var itInfo = insertInfo(tLat,tLng,pLat,pLng,cDist);
- 		creatMark(tLat,tLng,pLat,pLng,map);
- 		if(insertInfo){
- 			ranger();
- 		}
+			var itInfo = insertInfo(tLat,tLng,pLat,pLng,cDist);
+ 			creatMark(tLat,tLng,pLat,pLng,map);
+ 			if(insertInfo){
+ 				ranger();
+ 			}
 
+		}
+	} catch(e) {
+		console.log('Falha ao gerar localização: '+e);
 	}
-	/*} catch(e) {
-		console.log('Falha ao gerar localização'+e);
-	}*/
 }
 
 function calcDist(tLat,tLng,pLat,pLng){
@@ -98,104 +96,115 @@ function calcDist(tLat,tLng,pLat,pLng){
         a = (temp_sin * temp_sin) + (temp_cos * temp_cos) * (temp_sin2 * temp_sin2);
         c = 2.0 * Math.atan2(Math.sqrt(a), Math.sqrt(1.0 - a));
 
-    //Resultado da distancia
+//Resultado da distancia
         return parseInt((6368.1 * c)*1000);
     }catch(e){
-        console.error('Falha ao calcular a distancia'+e);
+        console.error('Falha ao calcular a distancia: '+e);
     }
 }
 
 function convertData(data){
-    var dia     = '00'+data.getDate();           // 1-31
-    var mes     = data.getMonth();          // 0-11 (zero=janeiro)
-    var ano4    = data.getFullYear();       // 4 dígitos
-    var hora    = '00'+data.getHours();          // 0-23
-    var min     = '00'+data.getMinutes();        // 0-59
-    var str_data = dia.slice(-2)+'/'+('00'+(mes+1)).slice(-2)+'/'+ano4+' - '+hora.slice(-2)+':'+ min.slice(-2);
+	try {
+	    var dia     = '00'+data.getDate();           // 1-31
+	    var mes     = data.getMonth();          // 0-11 (zero=janeiro)
+	    var ano4    = data.getFullYear();       // 4 dígitos
+	    var hora    = '00'+data.getHours();          // 0-23
+	    var min     = '00'+data.getMinutes();        // 0-59
+	    var str_data = dia.slice(-2)+'/'+('00'+(mes+1)).slice(-2)+'/'+ano4+' - '+hora.slice(-2)+':'+ min.slice(-2);
 
-    return str_data;
+	    return str_data;
+	} catch(e) {
+		console.error('Falha ao converter data: '+e);
+	}
 }
 
 function createBox(){
-	var sPopup = document.createElement('div');//Cria elemento Div
-	sPopup.id = 'shadow-popup';// Atribui Id para DIv criada
-	document.body.appendChild(sPopup);//Adiciona Div ao Body
-	var boxShadow = document.getElementById('shadow-popup');
+	try {
+		var sPopup = document.createElement('div');//Cria elemento Div
+		sPopup.id = 'shadow-popup';// Atribui Id para DIv criada
+		document.body.appendChild(sPopup);//Adiciona Div ao Body
+		var boxShadow = document.getElementById('shadow-popup');
 
-	document.body.style.overflow = 'hidden';// Ocuta barra de rolagem
-	window.scrollTo(0, 0);//Posiciona navegador no topo da pagina;
+		document.body.style.overflow = 'hidden';// Ocuta barra de rolagem
+		window.scrollTo(0, 0);//Posiciona navegador no topo da pagina;
 
-	//Criando cantainer do main
-	var boxMain = document.createElement('main');//cria elemento article
-	boxShadow.appendChild(boxMain);//imprime article dentro da section boxMain
-	var boxMain = boxShadow.querySelector('main');
+		//Criando cantainer do main
+		var boxMain = document.createElement('main');//cria elemento article
+		boxShadow.appendChild(boxMain);//imprime article dentro da section boxMain
+		var boxMain = boxShadow.querySelector('main');
 
-	//Criando cantainer do mapa
-	var boxMap = document.createElement('div');//cria elemento article
-	boxMap.id = 'map';//Atribui ao elemento article id 'map'
-	boxMain.appendChild(boxMap);//imprime article dentro da section boxMain
-	var boxMap = document.getElementById('map');
-	
-	//Criando cantainer da logo
-	var boxLogo = document.createElement('span');//cria elemento span
-	boxLogo.className = 'logo';//Atribui ao elemento article id 'map'
-	boxLogo.textContent = 'PETMonitor';
-	boxMain.appendChild(boxLogo);//imprime article dentro da section boxMain
+		//Criando cantainer do mapa
+		var boxMap = document.createElement('div');//cria elemento article
+		boxMap.id = 'map';//Atribui ao elemento article id 'map'
+		boxMain.appendChild(boxMap);//imprime article dentro da section boxMain
+		var boxMap = document.getElementById('map');
+		
+		//Criando cantainer da logo
+		var boxLogo = document.createElement('span');//cria elemento span
+		boxLogo.className = 'logo';//Atribui ao elemento article id 'map'
+		boxLogo.textContent = 'PETMonitor';
+		boxMain.appendChild(boxLogo);//imprime article dentro da section boxMain
 
-	//Criando cantainer das cordenadas
-	var boxInfo = document.createElement('aside');//cria elemento aside
-	boxInfo.className = 'boxInfo';//Atribui ao elemento aside id 'cord'
-	boxMain.appendChild(boxInfo);//imprime aside dentro da article boxMain
-	var boxInfo = boxMain.getElementsByClassName('boxInfo');
+		//Criando cantainer das cordenadas
+		var boxInfo = document.createElement('aside');//cria elemento aside
+		boxInfo.className = 'boxInfo';//Atribui ao elemento aside id 'cord'
+		boxMain.appendChild(boxInfo);//imprime aside dentro da article boxMain
+		var boxInfo = boxMain.getElementsByClassName('boxInfo');
 
-	if(boxInfo.length != 0){
-	//Insere mapa apos carregar o elemento boxInfo		
-		insertMap(pLat,pLng);
+		if(boxInfo.length != 0){
+		//Insere mapa apos carregar o elemento boxInfo		
+			insertMap(pLat,pLng);
+		}
+
+		//cria lista com as informações
+		var ulInfo = document.createElement('ul');//cria elemento ul
+		ulInfo.id = 'ulInfo';
+
+		boxInfo[0].appendChild(ulInfo);//imprime ul dentro da aside boxInfo
+		var ulInfo = document.getElementById('ulInfo');
+
+		//cria 5 linhas (LI) dentro da ul
+		for (var i = 0; i <= 3; i++) {
+			var liInfo =document.createElement('li');//cria elemento li
+			ulInfo.appendChild(liInfo)[i];
+		}
+
+		//identificando as linhas
+		var liInfo = ulInfo.children;
+
+		var inputRange = liInfo[0].id = 'range';
+		var valueRange = liInfo[1].id = 'vrange';
+		var valueAtt = liInfo[2].id = 'att';
+		var valueDist = liInfo[3].id = 'distPet';
+
+		//cria botão fechar
+		var boxClose = document.createElement('div');//cria elemento aside
+		boxClose.id = 'popup_close';//Atribui ao elemento aside id 'cord'
+		boxClose.setAttribute('onclick', 'closePopup()')
+		boxMain.appendChild(boxClose);//imprime aside dentro da article boxMain
+		var boxClose = boxMain.getElementsByClassName('boxClose');
+
+
+		return true;
+	} catch(e) {
+		console.log('Falha ao criar Box: '+e);
 	}
-
-	//cria lista com as informações
-	var ulInfo = document.createElement('ul');//cria elemento ul
-	ulInfo.id = 'ulInfo';
-
-	console.error(boxInfo[0])
-	boxInfo[0].appendChild(ulInfo);//imprime ul dentro da aside boxInfo
-	var ulInfo = document.getElementById('ulInfo');
-
-	//cria 5 linhas (LI) dentro da ul
-	for (var i = 0; i <= 3; i++) {
-		var liInfo =document.createElement('li');//cria elemento li
-		ulInfo.appendChild(liInfo)[i];
-	}
-
-	//identificando as linhas
-	var liInfo = ulInfo.children;
-
-	var inputRange = liInfo[0].id = 'range';
-	var valueRange = liInfo[1].id = 'vrange';
-	var valueAtt = liInfo[2].id = 'att';
-	var valueDist = liInfo[3].id = 'distPet';
-
-	//cria botão fechar
-	var boxClose = document.createElement('div');//cria elemento aside
-	boxClose.id = 'popup_close';//Atribui ao elemento aside id 'cord'
-	boxClose.setAttribute('onclick', 'closePopup()')
-	boxMain.appendChild(boxClose);//imprime aside dentro da article boxMain
-	var boxClose = boxMain.getElementsByClassName('boxClose');
-
-
-	return true;
 }
 
 function insertMap(pLat,pLng){
-	var pCord = {lat: pLat,lng: pLng};
-	//cria cria mapa centralizado nas cordenadas do Pet
-    map = new google.maps.Map(document.getElementById('map'), {
-    	zoom: mapZoom,//Zoom do mapa
-        center: pCord,//Cordenadas para centralização do mapa
-        mapTypeId: 'roadmap',//mapa padrão da google
-        mapTypeControl: false,//Desabilita contrle de tipo de mapas
-        fullscreenControl: false// Desabilita botão de fullScreen
-    });
+	try {
+			var pCord = {lat: pLat,lng: pLng};
+//cria cria mapa centralizado nas cordenadas do Pet
+    		map = new google.maps.Map(document.getElementById('map'), {
+    		zoom: mapZoom,//Zoom do mapa
+       		center: pCord,//Cordenadas para centralização do mapa
+        	mapTypeId: 'roadmap',//mapa padrão da google
+        	mapTypeControl: false,//Desabilita contrle de tipo de mapas
+        	fullscreenControl: false// Desabilita botão de fullScreen
+    	});
+    } catch(e) {
+		console.log('Falha ao inserir mapa: '+e);
+	}
 }
 
 function creatMark(tLat,tLng,pLat,pLng,map){
@@ -249,34 +258,38 @@ function clearMark() {
 }
 
 function insertInfo(tLat,tLng,pLat,pLng,cDist){
-	var Range = document.getElementById('range');
-	var vRange = document.getElementById('vrange');
-	var Att = document.getElementById('att');
-	var Dist = document.getElementById('distPet');
+	try {
+		var Range = document.getElementById('range');
+		var vRange = document.getElementById('vrange');
+		var Att = document.getElementById('att');
+		var Dist = document.getElementById('distPet');
 
-	if(range.querySelector('input') == null){
-		var inputRange = document.createElement('input')//cria input
-		//Insere atributos no input
-		inputRange.id = 'iRange';
-		inputRange.setAttribute('type', 'range');
-		inputRange.setAttribute('value', '20');
-		inputRange.setAttribute('min', '0');
-		inputRange.setAttribute('max', '100');
-		inputRange.setAttribute('step', '10');
-		inputRange.setAttribute('onchange','ranger()');
-		range.appendChild(inputRange);//Adiciona input dentro do elemento li#range
-	}
-	var iRange = document.getElementById('iRange').value;
-	var ulInfo = document.getElementById('ulInfo');
+		if(range.querySelector('input') == null){
+			var inputRange = document.createElement('input')//cria input
+			//Insere atributos no input
+			inputRange.id = 'iRange';
+			inputRange.setAttribute('type', 'range');
+			inputRange.setAttribute('value', '20');
+			inputRange.setAttribute('min', '0');
+			inputRange.setAttribute('max', '100');
+			inputRange.setAttribute('step', '10');
+			inputRange.setAttribute('onchange','ranger()');
+			range.appendChild(inputRange);//Adiciona input dentro do elemento li#range
+		}
+		var iRange = document.getElementById('iRange').value;
+		var ulInfo = document.getElementById('ulInfo');
 
-	//limpa as linhas dentro la lista ulInfo e insere novos valores
-	for (var i = 1; i <= 3; i++) {
-		if(i == 1){var text = iRange+' mt';}//Mostra valor do input range na tela
-		if(i == 2){var text = convertData(new Date());}//MOstra data da atualização das cordenadas
-		if(i == 3){var text = cDist+' mt';}//Mostra distancia entre pet e tutor
-		ulInfo.children[i].textContent = text;		
+		//limpa as linhas dentro la lista ulInfo e insere novos valores
+		for (var i = 1; i <= 3; i++) {
+			if(i == 1){var text = iRange+' mt';}//Mostra valor do input range na tela
+			if(i == 2){var text = convertData(new Date());}//MOstra data da atualização das cordenadas
+			if(i == 3){var text = cDist+' mt';}//Mostra distancia entre pet e tutor
+			ulInfo.children[i].textContent = text;		
+		}
+		redPag();
+	} catch(e) {
+		console.log('Falha ao inserir as informações: '+e);
 	}
-	redPag();
 }
 
 //Menssagem de erro caso navegador não suporte geolocalização
@@ -299,20 +312,24 @@ function ranger(){
 }
 
 function seguro(){
-	var dist = document.getElementById('distPet');
-//Compara distancia do pet com distancia segura
-//Se pet estiver fora muda cor do texto e emite um alerta
-	if((cDist > vrange)&&(vrange !=0)){
-		dist.style.color = '#F00';
-		dist.innerHTML = "<img src='img/alerta.gif' height='35px'><span>"+ cDist+" mt</span> <button id='mute' onclick='alerta()'></button>";
+	try {
+		var dist = document.getElementById('distPet');
+	//Compara distancia do pet com distancia segura
+	//Se pet estiver fora muda cor do texto e emite um alerta
+		if((cDist > vrange)&&(vrange !=0)){
+			dist.style.color = '#F00';
+			dist.innerHTML = "<img src='img/alerta.gif' height='35px'><span>"+ cDist+" mt</span> <button id='mute' onclick='alerta()'></button>";
 
-		alertasound = true;
-        alerta('play');//Se não emite sinal de alerta	
-	}else{
-		dist.style.color = '#000';
-		dist.innerHTML = cDist+" mt";
+			alertasound = true;
+	        alerta('play');//Se não emite sinal de alerta	
+		}else{
+			dist.style.color = '#000';
+			dist.innerHTML = cDist+" mt";
 
-		alerta('pause');
+			alerta('pause');
+		}
+	} catch(e) {
+		console.error('Falha ao verificar distancia segura: '+e);
 	}
 }
 
@@ -327,7 +344,6 @@ function alerta(x){
         }else if ((x == undefined && alertasound == false)) {
         	alertasound = true;
         }
-        console.error(alertasound);
 //Emite som de alerta        
         if (x == 'play') {
             const audio = document.querySelector('audio');
@@ -335,25 +351,32 @@ function alerta(x){
         }
 //Alter botão alerta para on/off
     } catch(e) {
-        console.log(e);
+        console.error('Falha ao gerar alerta: '+e);
     }
 
 }
 function redPag(){
-	console.error('teste');
-	var boxShadow = document.getElementById('shadow-popup');
-	var boxMain = boxShadow.querySelector('main');
-	var boxMap = document.getElementById('map');
-	var boxInfo = boxShadow.getElementsByClassName('boxInfo');
+	try {
+		var boxShadow = document.getElementById('shadow-popup');
+		var boxMain = boxShadow.querySelector('main');
+		var boxMap = document.getElementById('map');
+		var boxInfo = boxShadow.getElementsByClassName('boxInfo');
 
-	//Adiciona altura para contaner mada altura do boxMain - altura da BoxInfo
-	boxMap.style.height = boxMain.offsetHeight - boxInfo[0].offsetHeight+'px';
+		//Adiciona altura para contaner mada altura do boxMain - altura da BoxInfo
+		boxMap.style.height = boxMain.offsetHeight - boxInfo[0].offsetHeight+'px';
+	} catch(e) {
+		console.error('Falha ao redimencinar pagina: '+e);
+	}
 }
 
 function closePopup(){
-	var sShadow = document.getElementById('shadow-popup');
-	document.body.style.overflowY = 'visible';
-	alerta('pause');//Paura o som de alerta
-	navigator.geolocation.clearWatch(getId);//Para a atualização da navegação
-	document.body.removeChild(sShadow);//remove o popup 
+	try {
+		var sShadow = document.getElementById('shadow-popup');
+		document.body.style.overflowY = 'visible';
+		alerta('pause');//Paura o som de alerta
+		navigator.geolocation.clearWatch(getId);//Para a atualização da navegação
+		document.body.removeChild(sShadow);//remove o popup 
+} catch(e) {
+		console.error('Falha ao fechar Pop-up: '+e);
+	}
 }
