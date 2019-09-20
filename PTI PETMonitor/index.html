@@ -12,17 +12,17 @@
 <!--[endif]-->
 <!-- Reset CSS -->
 	<link rel="stylesheet" href="css/reset.css">
+<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- CSS personaizado -->
 	<link rel="stylesheet" href="css/style.css">
 <!-- JavaScript GPS -->
 	<script type="text/javascript" src="js/loc.js"></script>
-<!-- Googe API -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvS9B8e2bN1qDJkc0VKma-kUCWcBlqloA">
-    </script>
+<!-- OpenLayer API -->
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
 </head>
 <body>
 <!-- Todas imagens desse tite foi retirada de um site de livre uso comercia: https://pixabay.com/pt/ -->
-<!-- Menu utilizando bootStrap -->
 	<!-- Cria contaner navegação -->
 	<nav class="navegacao" aria-haspopup="true">
 		<a class="logo" href="#">PETMonitor</a>
@@ -50,35 +50,34 @@
 			</article>
 			<!-- Formuario para localização -->
 			<h2 align="center">Dados do Pet</h2>
-			<form class="locPet" method="POST">
-				<ul>
-					<li>
-						<input type="text" id="nomepet" maxlength="12" name="nomepet" placeholder="Nome do animal" autocomplete="off" maxlength="12" required="required" >
-					</li>
-					<li>
-						<input type="text" id="raca" maxlength="12" name="raca" placeholder="Raça:" autocomplete="off" maxlength="12" required="required" >
-					</li>
-					<li class="raca">
-						<!--Macho -->
-						<input id="raca-m" type="radio" name="raca" value="1" checked>
-						<label class="racem" for="raca-m"></label>
-						<!--Fêmea-->
-						<input id="raca-f" type="radio" name="raca" value="1">
-						<label class="racef" for="raca-f"></label>
-					</li>
-					<li>
-						<input type="submit" name="localiza" value="Localizar">
-					</li>
-				</ul>							
-			</form>
+			<ul class="locPet">
+				<form method="post" action="" id="localiza">
+				<li>
+					<input type="text" id="nomepet" maxlength="12" name="nomepet" placeholder="Nome do animal" autocomplete="off" maxlength="12" required="required" >
+				</li>
+				<li>
+					<input type="text" id="raca" maxlength="12" name="raca" placeholder="Raça:" autocomplete="off" maxlength="12" required="required" >
+				</li>
+				<li class="sexo">
+					<!--Macho -->
+					<input id="raca-m" class="sexo" type="radio" name="sexo" value="M" checked>
+					<label class="racem" for="raca-m"></label>
+					<!--Fêmea-->
+					<input id="raca-f" class="sexo" type="radio" name="sexo" value="F">
+					<label class="racef" for="raca-f"></label>
+				</li>
+				<li>
+					<input type="submit" name="localiza" value="Localizar">
+				</li>
+				</form>
+			</ul>
 		</section>
 		<footer id="footer">
-			<p align="center">
-				<b>Entre em contato conosco<br></b>
-				(11) 1234 5678<br>
-				contato@petmonitor.com.br<br>
-				Av. São Paulo 4 – Jardim Das Flores<br>
-				São Paulo/SP<br>
+			<p align="center"><b><font color="#FF7901">Entre em contato conosco</font></b><br>
+				<span></span>(11) 1234 5678<br>
+				<span></span>contato@petmonitor.com.br<br>
+				<span></span>Av. São Paulo 4 – Jardim Das Flores<br>
+				São Paulo/SP
 			</p>
 		</footer>
 	</main>
@@ -97,20 +96,13 @@
 		x.classList = '';
 		y.innerHTML = '&equiv;';
 	}
-
-	/*Parar envio formulario */
-	var form = document.querySelector('form');
-    	form.addEventListener('submit', function(e){
-    		nomepet = document.getElementById('nomepet').value.toUpperCase();
-    		raca = document.getElementById("raca").value;
-
-    		e.preventDefault(); // <--- pára o envio do formulario
-    		givLoc();
-    		form.reset();
-    		e.prevent
+	/*Parar o envio do Formulario*/
+	   $(document).ready(function(){
+		   $("#localiza").on("submit", function(e){
+		       e.preventDefault();
+		       givLoc();  
+		   });
 		});
-
-	window.onresize = redPag;
 </script>
 <!--Som alerta -->
 	<audio loop="loop">

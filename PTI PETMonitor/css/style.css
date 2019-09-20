@@ -11,12 +11,10 @@ https://www.cssmatic.com/border-radius;
 */
 /*---------- Font externa ----------*/
 @font-face { font-family: OpenSans; src: url('OpenSans-Regular.ttf'); }
+@font-face { font-family: ETmodules; src: url('ElegantIcons.ttf'); }
 
 html, body{ min-height: 100%; height: 100%; }
 body{ font-family: arial; overflow-x: hidden; }
-
-/*---------- Variaveis ----------*/
-:root { --navTop:3.8rem; }
 
 /*---------- Global ----------*/
 a, a:active{ text-decoration: none; }
@@ -52,28 +50,27 @@ nav.show a.mobile{ font-size: 2.5rem; vertical-align: bottom; font-weight: 600;}
 
 /*---------- Conteudo ----------*/
 main#container{ position: relative; padding-top: calc(3.8rem); min-height: calc(100% - (3.8rem + 2px)); }
-section{padding-bottom: 170px; }
-article.home{ padding: 1rem; 	font-family: OpenSans, sans-serif; }
+section{padding-bottom: 120px; }
+article.home{ padding: 0.8rem 1rem 0 1rem; 	font-family: "OpenSans", sans-serif; }
 
 /*---------- Formulario LocPet ----------*/
-form.locPet{ text-align: center; width: 95vw; margin: 0 auto; }
-form.locPet ul{ list-style: none; }
-form.locPet ul li{ padding-bottom: 17px; }
+ul.locPet{ text-align: center; width: 95vw; margin: 0 auto; list-style: none; }
+ul.locPet li{ padding-bottom: 17px; }
 
 /*---------- Input ----------*/
 input{ -webkit-border-radius: 5vw; 	-moz-border-radius: 5vw; border-radius: 5vw; padding: 8px; padding-left: 16px; font-size: 1rem; width: 90vw; max-width:250px; outline: 0; max-height: 40px; box-sizing: border-box; text-align: center; }
 input[type="text"]{ border: 1px solid #FF7901; }
 input[type="text"]:hover, input[type="text"]:focus{ background-color: #fcf2e8; }
 
-/*---------- Check raça ----------*/
-form.locPet ul li.raca{	text-align: center;}
-form.locPet ul li.raca input[type=radio]{visibility: hidden; position: absolute; width: 1px; }
-form.locPet ul li.raca input[type=radio]:after{	content: ""; clear: both; }
-form.locPet ul li.raca input[type=radio]:checked + label{ opacity: 1; }
-form.locPet ul li.raca label.racem, form.locPet ul li.raca label.racef{	width: 32px; height: 32px; display: inline-block; margin: 0 10px; }
-form.locPet ul li.raca label{ background: url("../img/race.gif"); cursor: pointer; opacity: 0.2; }
-form.locPet ul li.raca label.racem{ background-position: top left; }
-form.locPet ul li.raca label.racef{	background-position: top right; }
+/*---------- Check sexo ----------*/
+ul.locPet li.sexo{	text-align: center;}
+ul.locPet li.sexo input[type=radio]{visibility: hidden; position: absolute; width: 1px; }
+ul.locPet li.sexo input[type=radio]:after{	content: ""; clear: both; }
+ul.locPet li.sexo input[type=radio]:checked + label{ opacity: 1; }
+ul.locPet li.sexo label.racem, ul.locPet li.sexo label.racef{	width: 32px; height: 32px; display: inline-block; margin: 0 10px; }
+ul.locPet li.sexo label{ background: url("../img/race.gif"); cursor: pointer; opacity: 0.2; }
+ul.locPet li.sexo label.racem{ background-position: top left; }
+ul.locPet li.sexo label.racef{	background-position: top right; }
 
 /*---------- Submit ----------*/
 input[type="submit"]{ border: none; outline: 0; font-size: 18px; font-weight: bold;	color: #FFF; cursor: pointer;
@@ -93,7 +90,25 @@ input[type="submit"]:hover{	cursor: pointer; color: #F00;
 }
 
 /*---------- Rodapé ----------*/
-footer#footer{ position: absolute; bottom: 0; width: 100vw; border: none; border-top: 2px #FF7901 solid; background-color: #EBEBEB; }
+footer#footer{ 
+	position: absolute; 
+	bottom: 0; width: 100vw; 
+	border: none; 
+	border-top: 2px #FF7901 solid; 
+	background-color: #EBEBEB;
+	color: #333;
+	font-weight: 500;
+}
+
+footer span{
+	font-family: ETmodules;
+	padding-right: 1vw;
+	color: #FF7901;
+}
+
+footer p{
+	margin: 5px;
+}
 
 /*---------- Pop up ----------*/
 div#shadow-popup{
@@ -137,8 +152,38 @@ div#shadow-popup .logo{
 	border: none;
 }
 div#shadow-popup .logo::after{ content: url('../img/logo30.png'); }
-
-/*Informações do mapa*/
+/*---------- Marcadores MAPA ----------*/
+div#markerP, div#markerT{
+	width: 44px;
+	height: 60px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 60px;
+	position: relative;
+	right: 21px;
+}
+div#markerP{
+	background-image: url(../img/markerP.gif);
+}
+div#markerT{
+	background-image: url(../img/markerT.gif);
+}
+div#markerT:hover label, div#markerP:hover label{
+	display: block;
+}
+div#markerT label, div#markerP label{
+    background-color: #fff;
+    left: 45px;
+    position: absolute;
+    width: auto;
+    font-size: 12px;
+    color: #666;
+    padding: 1vw;
+    display: none;
+    z-index: 999;
+    width: 10vw;
+}
+/*---------- Informações do mapa ----------*/
 div#shadow-popup main .boxInfo{
 	position: absolute;
 	bottom: 0;
@@ -200,10 +245,17 @@ button#mute{
 	background-color: transparent;
 	border: none;
 	background-image: url(../img/muted.gif);
-	background-position: bottom;
+	background-position: top;
 	width: 32px;
 	height: 32px;
 	vertical-align: middle;
+}
+
+li#distPet button.on{
+	background-position: bottom;
+}
+li#distPet button.off{
+	background-position: top;
 }
 div#popup_close{
 	position: absolute;
@@ -218,8 +270,8 @@ div#popup_close{
 /* Large devices (900px and up) */
 @media (min-width: 800px) {
 	article.home{width: 80vw; margin: 0 auto; }
-	form.locPet{ width: 80vw; background-image: url(../img/bgk1.jpg), url(../img/bgk2.jpg); background-position: left bottom, right bottom; background-size: contain; background-repeat: no-repeat; }
-	ul#nav-link{ line-height: var( --navTop ); float: right; margin-right: 2vw; transition: height none; -webkit-transition:none; -moz-transition:none; -o-transition: height none; ms-transition: height none; }
+	ul.locPet{ width: 80vw; background-image: url(../img/bgk1.jpg), url(../img/bgk2.jpg); background-position: left bottom, right bottom; background-size: contain; background-repeat: no-repeat; }
+	ul#nav-link{ line-height: 3.8rem; float: right; margin-right: 2vw; transition: height none; -webkit-transition:none; -moz-transition:none; -o-transition: height none; ms-transition: height none; }
 	ul#nav-link li{ display: inline-block; border: none; }
 	ul#nav-link li a{line-height: 3.5rem;}
 	nav.navegacao a.mobile{ display: none; }
@@ -228,5 +280,5 @@ div#popup_close{
 }
 @media (min-width: 1200px) {
 	article.home{ width: 50vw; }
-	form.locPet{ width: 50vw; }
+	ul.locPet{ width: 50vw; }
 }
