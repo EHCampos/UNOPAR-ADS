@@ -422,5 +422,5 @@ function closePopup(){
 /*---------------- Erro executar Geolocalização ----------------*/
 //Menssagem de erro caso navegador não suporte geolocalização
 function errorCallback(error) {
-    console.error('Erro ao carregar geolocalização');
+    console.error('Erro ao carregar geolocalização!');
 }
